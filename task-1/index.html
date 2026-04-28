@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <section class="leaderboard">
+      <header class="header">
+        <div class="header-content">
+          <h2>Leaderboard</h2>
+          <p>Top performers based on contributions and activity</p>
+        </div>
+      </header>
+
+      <div class="filter-bar">
+        <div class="filters">
+          <div class="dropdown-wrapper">
+            <select id="filter-year" class="dropdown">
+              <option value="all">All Years</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+            </select>
+            <span class="dropdown-chevron">
+              <i class="fluent-icon icon-chevron-down" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <div class="dropdown-wrapper">
+            <select id="filter-quarter" class="dropdown">
+              <option value="all">All Quarters</option>
+              <option value="1">Q1</option>
+              <option value="2">Q2</option>
+              <option value="3">Q3</option>
+              <option value="4">Q4</option>
+            </select>
+            <span class="dropdown-chevron">
+              <i class="fluent-icon icon-chevron-down" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <div class="dropdown-wrapper dropdown-wrapper--wide">
+            <select id="filter-category" class="dropdown">
+              <option value="all">All Categories</option>
+              <option value="Education">Education</option>
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="University Partnership">University Partnership</option>
+            </select>
+            <span class="dropdown-chevron">
+              <i class="fluent-icon icon-chevron-down" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="search-wrapper">
+          <span class="search-icon">
+            <i class="fluent-icon icon-search" aria-hidden="true"></i>
+          </span>
+          <input id="search-input" type="text" placeholder="Search employee..." class="search-input" />
+        </div>
+      </div>
+
+      <div id="podium" class="podium"></div>
+
+      <div id="list" class="list"></div>
+    </section>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
