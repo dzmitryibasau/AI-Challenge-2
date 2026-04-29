@@ -12,7 +12,7 @@
 
 I took screenshots of the leaderboard and examined the page HTML source through browser DevTools. This gave me the full picture of every component: the header, filter bar, podium, ranked list rows, expanded activity drawers, color palette, and filter logic.
 
-I saved the page locally to `sample/EDU - Company Leader Board 2025.html` and used Claude Code to extract CSS rules from the SPFx component's embedded `<style>` block (class suffix `_2943a085`). This gave ground-truth values for every style property.
+I saved the page locally and used Claude Code to extract CSS rules from the SPFx component's embedded `<style>` block. This gave ground-truth values for every style property.
 
 ### Step 2 — Chose the stack
 
@@ -49,10 +49,6 @@ All 30 employee records are entirely fictional:
 - [x] Expand/collapse → activity table with color-coded category badges, date, and points
 - [x] Real-time filter/re-sort; employees with zero filtered score are hidden
 - [x] Mobile responsive layout
-
-### What was intentionally omitted
-
-- **Dark/light theme toggle** — the original header contains a round button that switches the page between light and dark color schemes. Since the challenge focuses on the leaderboard functionality and the page works in a single theme, this toggle was excluded as non-essential.
 
 ### Step 6 — Deployment & final polish
 
