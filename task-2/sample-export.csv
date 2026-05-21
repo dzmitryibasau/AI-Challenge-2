@@ -1,0 +1,8 @@
+name,email,RSVP status,check-in time
+Ada Lovelace,ada@example.com,going,2026-05-11T18:03:12Z
+Grace Hopper,grace@example.com,going,2026-05-11T18:05:44Z
+Alan Turing,alan@example.com,going,
+"Doe, Jane",jane.doe@example.com,going,2026-05-11T18:11:02Z
+Linus Torvalds,linus@example.com,waitlist,
+Margaret Hamilton,margaret@example.com,cancelled,
+"O'Neil ""Buzz""",buzz@example.com,going,2026-05-11T18:14:30Z
