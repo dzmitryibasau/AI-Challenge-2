@@ -1,0 +1,7 @@
+# Local IDE / agent state
+.claude/
+.vscode/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
